@@ -10,6 +10,8 @@ root.render(
   <React.StrictMode>
     <App />
 
+    {/* <CryptoPrices></CryptoPrices> */}
+
     <TopCryptos></TopCryptos>
 
   </React.StrictMode>

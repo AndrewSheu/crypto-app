@@ -14,7 +14,6 @@ const CryptoPrices = () => {
                 const data = await response.json();
                 setCryptoPrices(data);
                 setIsLoading(false);
-                console.log(data)
             } catch (error) {
                 console.error('Failed to fetch data:', error);
                 setIsLoading(false);
@@ -31,7 +30,7 @@ const CryptoPrices = () => {
 
     return (
         <div>
-            {/* <h1>Crypto Prices</h1>
+            <h1>Crypto Prices</h1>
             <ul>
                 {cryptoPrices.map((crypto) => (
                     <li key={crypto.asset_id}>
@@ -39,7 +38,7 @@ const CryptoPrices = () => {
                         <p>Price USD: ${crypto.price_usd}</p>
                     </li>
                 ))}
-            </ul> */}
+            </ul>
         </div>
     );
 };
