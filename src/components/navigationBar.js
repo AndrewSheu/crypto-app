@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import TopCryptos from "./topCrytos";
 
 function NavBar() {
   return (
@@ -21,19 +23,19 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/topCryptos">
                 Prices
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/">
                 Top10
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
