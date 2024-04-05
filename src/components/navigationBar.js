@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import TopCryptos from "./topCrytos";
 
 function NavBar() {
   return (
@@ -28,7 +27,7 @@ function NavBar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/topCryptos">
+              <Link className="nav-link" to="/topcrytos">
                 Prices
               </Link>
             </li>

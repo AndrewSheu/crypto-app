@@ -12,10 +12,10 @@ function App() {
       <BrowserRouter>
         <NavBar></NavBar>
         <Switch>
-          <Route path="/">
+          <Route path="/" exact>
             <Home></Home>
           </Route>
-          <Route path="/">
+          <Route path="/topcrytos">
             <TopCryptos></TopCryptos>
           </Route>
         </Switch>
